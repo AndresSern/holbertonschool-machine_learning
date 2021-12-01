@@ -11,4 +11,5 @@ the transpose of a 2D matrix, matrix:
 
 
 def matrix_transpose(matrix):
+    """ returns the transpose of a 2D matrix, matrix """
     return [list(row) for row in zip(*matrix)]
