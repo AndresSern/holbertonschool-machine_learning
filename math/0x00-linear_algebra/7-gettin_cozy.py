@@ -14,11 +14,7 @@ def cat_matrices2D(mat1, mat2, axis=0):
     """ Function that concatenates two matrices along a specific axis """
     if axis == 0:
         if len(mat2[0]) == len(mat1[0]):
-            copy_mat1 = mat1.copy()
-            test_mat1 = mat1.copy() + ([*mat2])
-            for row2 in mat2.copy():
-                copy_mat1 = copy_mat1 + [row2]
-            return test_mat1
+            return mat1.copy() + ([*mat2])
         return None
     elif axis == 1:
         if len(mat2) == len(mat1):
