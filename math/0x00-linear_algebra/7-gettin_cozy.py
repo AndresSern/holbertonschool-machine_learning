@@ -9,6 +9,7 @@ Write a function def cat_matrices2D(mat1, mat2, axis=0):
   if the two matrices cannot be concatenated, return None
 """
 
+
 def cat_matrices2D(mat1, mat2, axis=0):
     """ Function that concatenates two matrices along a specific axis """
     if axis == 0:
