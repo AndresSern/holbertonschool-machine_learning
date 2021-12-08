@@ -7,6 +7,7 @@ Write a function def np_transpose(matrix): that transposes matrix:
     You must return a new numpy.ndarray
 """
 
+
 def np_transpose(matrix):
     """ function that transposes matrix:"""
     return matrix.transpose()

@@ -8,8 +8,9 @@ Write a function def np_shape(matrix):
     The shape should be returned as a tuple of integers
 """
 
+
 def np_shape(matrix):
- """
-    that calculates the shape of a numpy.ndarray:
- """
- return matrix.shape
+    """
+        that calculates the shape of a numpy.ndarray:
+    """
+    return matrix.shape
