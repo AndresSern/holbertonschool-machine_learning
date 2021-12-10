@@ -11,5 +11,8 @@ Write a function def summation_i_squared(n): that calculates a sigma to the
 
 def summation_i_squared(n):
     """ that calculates a sigma to the square """
+    if type(n) is not int or n < 1:
+        return None
+
     multiply = n * (n + 1) * (2 * n + 1)
     return multiply // 6
