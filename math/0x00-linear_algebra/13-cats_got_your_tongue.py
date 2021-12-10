@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import numpy as np
-
 """
 Write a function def np_cat(mat1, mat2, axis=0)
     that concatenates two matrices along a specific axis:
@@ -15,6 +14,6 @@ Write a function def np_cat(mat1, mat2, axis=0)
 
 def np_cat(mat1, mat2, axis=0):
     """
-        that concatenates two matrices along a specific axis
+        function that concatenates two matrices along a specific axis
     """
     return np.concatenate((mat1, mat2), axis=axis)
