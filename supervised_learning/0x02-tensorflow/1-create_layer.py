@@ -7,6 +7,7 @@ Defines a function to create a layer for neural network
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
+
 def create_layer(prev, n, activation):
     """
     Creates a layer for neural network
