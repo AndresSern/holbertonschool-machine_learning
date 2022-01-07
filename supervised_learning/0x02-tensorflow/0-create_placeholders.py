@@ -18,6 +18,7 @@ def create_placeholders(nx, classes):
     returns:
         the placeholders, x and y, respectively
     """
-    x = tf.placeholder("float", shape=[None, nx], name="x")
-    y = tf.placeholder("float", shape=[None, classes], name="y")
-    return x, y
+    x = tf.placeholder(float, shape=[None, nx], name="x")
+    y = tf.placeholder(float, shape=[None, classes], name="y")
+
+    return (x, y)
