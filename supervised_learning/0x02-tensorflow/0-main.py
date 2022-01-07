@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
 
 import tensorflow.compat.v1 as tf
 tf.disable_eager_execution()
