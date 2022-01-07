@@ -5,7 +5,7 @@ Defines a function to create a layer for neural network
 
 
 import tensorflow.compat.v1 as tf
-
+tf.disable_v2_behavior()
 
 def create_layer(prev, n, activation):
     """
@@ -20,11 +20,7 @@ def create_layer(prev, n, activation):
     returns:
         tensor output of the layer
     """
-    weights_initializer = tf.contrib.layers.variance_scaling_initializer(
-        mode="FAN_AVG")
-    layer = tf.layers.Dense(
-        n,
-        activation=activation,
-        name="layer",
-        kernel_initializer=weights_initializer)
-    return (layer(prev))
+    weights = tf.keras.initializers.VarianceScaling(mode='fan_avg')
+    layer = tf.layers.Dense(n, activation=activation,
+                            kernel_initializer=weights, name='layer')
+    return layer(prev)
