@@ -20,12 +20,19 @@ class Neuron:
         self.__b = 0
         self.__A = 0
 
+    def forward_prop(self, X):
+        """
+        Calculates the forward propagation of the neuron
+        """
+        y = np.matmul(self.__W, X) + self.__b
+        self.__A = 1 / (1 + np.exp(-y))
+        return (self.__A)
+
     @property
     def W(self):
         """
         Getter
         __W The weights vector for the neuron
-
         """
         return (self.__W)
 
@@ -34,7 +41,6 @@ class Neuron:
         """
         Getter
         __b bias for the neuron
-
         """
         return (self.__b)
 
