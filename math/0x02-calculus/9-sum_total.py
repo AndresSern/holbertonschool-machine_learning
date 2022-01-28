@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
-"""
-Write a function def summation_i_squared(n): that calculates a sigma to the
-  square
-    n is the stopping condition
-    Return the integer value of the sum
-    If n is not a valid number, return None
-    You are not allowed to use any loops
-"""
+"""Function sigma for a squared positive int"""
 
 
 def summation_i_squared(n):
-    """ that calculates a sigma to the square """
+    """Returns sum of a squared positive int"""
+    result = 0
     if type(n) is not int or n < 1:
         return None
-
-    multiply = n * (n + 1) * (2 * n + 1)
-    return multiply // 6
+    else:
+        nums = range(n+1)
+        result = map(lambda n: n**2, nums)
+    return sum(result)

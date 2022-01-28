@@ -3,8 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 y = np.arange(0, 11) ** 3
-
-plt.plot(range(len(y)), y, 'r-')
-plt.xlim(0, len(y) - 1)
-
+plt.plot(y, 'r-')
+plt.xlim(0, 10)
 plt.show()
